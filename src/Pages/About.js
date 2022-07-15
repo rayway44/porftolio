@@ -11,8 +11,6 @@ export default function About() {
   const [modal, setModal] = useState(false);
   const [message, setMessage] = useState();
 
-  const baseUrl = 'http://localhost:4000/'
-
     const formValidator = (e) => {
       e.preventDefault();
 
@@ -30,17 +28,6 @@ export default function About() {
 
         console.log('fields filled')
         setMessage(<SuccessMessage name={firstName} />)
-
-        // nodeJs
-        // axios.post(`${baseUrl}contact`,{
-        //   fName: firstName,
-        //   lName: lastName,
-        //   subject: subject,
-        //   message: message,
-        // })
-        // .then(res => {
-        //   console.log(res)
-        // })
 
         // vercel serverless
         axios.post(`/ray`,{
