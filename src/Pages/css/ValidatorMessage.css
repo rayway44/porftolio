@@ -1,0 +1,13 @@
+
+.success{
+    border-bottom: 4px solid rgba(0, 128, 0, 0.86);
+    color: rgba(0, 128, 0, 0.86);
+    padding:10px;
+    /* border-radius:18px; */
+}
+.error{
+    border-bottom: 4px solid red;
+    padding:10px;
+    color:rgba(255, 0, 0, 0.875);
+    /* border-radius:18px; */
+}

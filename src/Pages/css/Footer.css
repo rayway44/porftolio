@@ -1,0 +1,16 @@
+
+.footer-body{
+    /* border:2px solid red; */
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.footer-body a{
+    text-decoration:none;
+    color:black;
+}
+.footer-body a:hover{
+    color:rgb(96, 96, 96);
+}

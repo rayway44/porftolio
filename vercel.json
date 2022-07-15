@@ -1,0 +1,19 @@
+{
+    "routes":[
+        {
+            "src": "/ray",
+            "methods": [
+                "GET",
+                "POST"
+            ],
+            "dest": "/api/contact.js"
+        },
+        {
+            "src": "/test",
+            "methods": [
+                "GET"
+            ],
+            "dest": "/api/test.js"
+        }
+    ]
+}

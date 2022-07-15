@@ -1,0 +1,31 @@
+
+.main-body-wrapper{
+    padding:10px;
+    /* border:12px solid red; */
+}
+.main-one-bottom-button-holder{
+    /* border:12px solid red; */
+    animation: entryAnimation 2s ;
+    animation-timing-function: ease-in;
+}
+
+.main-one-bottom-button{
+    /* border:12px solid red; */
+    width:auto;
+    text-align: center;
+    animation-delay: 2s;
+    animation: blinking 2s ;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinking{
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes entryAnimation{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}

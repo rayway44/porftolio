@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+body.active-modal {
+    overflow-y: hidden;
+    /* border:3px solid black; */
+}
+
+.top-spacer{
+}
+
+.btn-modal {
+    text-align: center;
+    font-size:1em;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+    border:3px solid black;
+    padding:1.5%;
+    border-radius:15px;
+    width: 30%;
+    margin:0 auto;
+}
+.btn-modal:hover{
+    border:3px solid rgb(128, 127, 127);
+    color:rgb(128, 127, 127);
+    cursor: pointer;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 11;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    /* border:12px solid red; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f1f1f1;
+    padding: 2% 2%;
+    border-radius: 13px;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    /* min-width: 300px; */
+    z-index: 12;
+}
+.form-styling{
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    max-width:80vw;
+    margin:1% 0%;
+}
+.modal-content input{
+    /* border:2px solid red; */
+    /* display: block; */
+    margin: 1%;
+    max-width:100%
+}
+.input-styling{
+    font-size:1em;
+    padding:2%;
+}
+.textarea-styling{
+    /* border:2px solid red; */
+    min-height:200px;
+    max-width:50vw;
+    font-family:arial,sans-serif;
+}
+
+.close-modal {
+    margin-top: 20px;
+    padding:1%;
+    border:2px solid rgba(0, 0, 0, 0.584);
+    border-radius: 12px;
+}
+
+.close-modal:hover{
+    background:black;
+    color:white;
+    cursor: pointer;
+}
+
+.modal-content-title{
+    font-family: 'Epilogue', sans-serif;
+    font-size:2em;
+}
+
+.modal-submit-button{
+    margin-top: 10px;
+    border:2px solid black; 
+    padding:1%;
+    border-radius: 18px;
+}
+.modal-submit-button:hover{
+    background:black;
+    color:white;
+    cursor: pointer;
+}
+
+.modal-warning-message{
+    margin-top: 10px;
+    /* border:2px solid red;  */
+    padding:1%;
+    border-radius: 18px;
+    font-family: 'Epilogue', sans-serif;
+    font-size:1em;
+}

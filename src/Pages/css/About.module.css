@@ -1,0 +1,30 @@
+
+
+.aboutBody{
+    border: 7px solid green;
+    border-radius: 18px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.408);
+    min-height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.aboutContent{
+    /* border: 7px solid green; */
+    width:80%;
+}
+.aboutContent span{
+    /* border: 7px solid green; */
+    display: block;
+    margin: 1.5% 0%;
+}
+
+.aboutName{
+    font-size:2em;
+}
+
+.aboutEmail{
+    border: 7px solid green;
+    margin-top:100px;
+}
