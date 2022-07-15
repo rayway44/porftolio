@@ -5,50 +5,15 @@ import SuccessMessage from './Components/SuccessMessage'
 
 import styles from './css/About.module.css'
 import './css/Modal.css'
-// import { response } from 'express';
 
 export default function About() {
 
   const [modal, setModal] = useState(false);
   const [message, setMessage] = useState();
 
-  // server
-  // const baseUrl = '/api/'
+  const baseUrl = 'http://localhost:4000/'
 
-  // nodeJS
-  const baseUrl = 'http://localhost:3000/'
-
-  
-  // const entryApi = () => {
-    
-  //   const name = 'MyNameIsRay'
-    
-  //   axios.post(`${baseUrl}ray`,{
-  //     Name: name
-  //   })
-  //   .then(res => {
-  //     console.log(res.data)
-  //   })
-  // }
-  // entryApi()
-
-    const formValidator = () => {
-      console.log('CLICKING FORM VALIDATOR')
-      const firstName = document.getElementById('firstName').value
-      const lastName = document.getElementById('lastName').value
-      const subject = document.getElementById('subject').value
-
-      if(firstName === '' || lastName === '' || subject === '') {
-        console.log('fields empty')
-        setMessage(<WarningError/>)
-      } else {
-        console.log('fields filled')
-        setMessage(<SuccessMessage name={firstName} />)
-        setTimeout(toggleModal, 3000);
-      }
-    }
-
-    const clicker = (e) => {
+    const formValidator = (e) => {
       e.preventDefault();
 
       const firstName = document.getElementById('firstName').value
@@ -66,6 +31,17 @@ export default function About() {
         console.log('fields filled')
         setMessage(<SuccessMessage name={firstName} />)
 
+        // nodeJs
+        // axios.post(`${baseUrl}contact`,{
+        //   fName: firstName,
+        //   lName: lastName,
+        //   subject: subject,
+        //   message: message,
+        // })
+        // .then(res => {
+        //   console.log(res)
+        // })
+
         // vercel serverless
         axios.post(`/ray`,{
           fName: firstName,
@@ -79,8 +55,8 @@ export default function About() {
         
         setTimeout(toggleModal, 3000);
       }
-        // console.log(firstName, lastName, subject, message)
 
+      console.log(firstName, lastName, subject, message)
     }
 
     const toggleModal = () => {
