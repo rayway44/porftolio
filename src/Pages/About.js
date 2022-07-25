@@ -30,7 +30,7 @@ export default function About() {
         setMessage(<SuccessMessage name={firstName} />)
 
         // vercel serverless
-        axios.post(`/ray`,{
+        axios.post(`localhost`,{
           fName: firstName,
           lName: lastName,
           subject: subject,
