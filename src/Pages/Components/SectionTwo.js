@@ -3,6 +3,7 @@ import CardOne from './CardOne'
 import CardTwo from './CardTwo'
 import CardThree from './CardThree'
 import CardFour from './CardFour'
+import CardFive from './CardFive'
 import '../css/SectionTwo.css'
 
 export default function SectionTwo() {
@@ -14,6 +15,7 @@ export default function SectionTwo() {
         <CardTwo/>
         <CardThree />
         <CardFour />
+        <CardFive />
       </div>
     </div>
   )

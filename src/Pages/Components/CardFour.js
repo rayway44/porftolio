@@ -29,7 +29,6 @@ export default function CardFour() {
         <Carousel className='border'>
                 <div>
                     <img src='images/turners-01.png' alt='' className='carosoul-pic' />
-                    
                 </div>
                 <div>
                 <img src='images/turners-02.png' alt='' className='carosoul-pic' />
