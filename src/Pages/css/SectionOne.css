@@ -1,6 +1,6 @@
 
 .section-one-body{
-    /* border:2px solid green; */
+    border:2px solid green;
     height:70vh;
     display: flex;
     flex-direction: column;
@@ -44,6 +44,11 @@
     display:flex;
     justify-content:center;
     text-align:center;
+}
+
+.middle{
+    border:12px solid red;
+
 }
 
 @keyframes lineOne{

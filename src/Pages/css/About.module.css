@@ -1,7 +1,7 @@
 
 
 .aboutBody{
-    border: 7px solid green;
+    /* border: 7px solid green; */
     border-radius: 18px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.408);
     min-height:60vh;

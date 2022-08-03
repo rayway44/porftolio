@@ -22,6 +22,7 @@ export default function SectionOne() {
           {/* <div className='section-one-bottom-button' onMouseOver={rollOver} onMouseOut={rollOut}>
             {buttonArrow}
           </div> */}
+          
         </div>
     </div>
   )

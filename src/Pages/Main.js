@@ -1,7 +1,9 @@
 import React, {useState, useRef} from 'react';
 import SectionOne from './Components/SectionOne'
 import SectionTwo from './Components/SectionTwo'
+import NewSectionOne from './Components/newSectionOne'
 import About from './About'
+
 
 import Footer from './Components/Footer'
 
@@ -56,7 +58,8 @@ function projectsSection(e){
       </div>
 
         <div ref={home}></div>
-        <SectionOne /> {/* Home Section */}
+        {/* <SectionOne /> Home Section */}
+        <NewSectionOne /> {/* Home Section */}
 
         <div className='main-one-bottom-button-holder'>
           <div className='main-one-bottom-button' onClick={projectsSection} onMouseOver={rollOver} onMouseOut={rollOut}>
